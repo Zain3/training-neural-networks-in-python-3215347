@@ -37,8 +37,14 @@ class Perceptron:
 
 # ------------------------------------------------------------------#
 
-"""For an XOR, if we plot it's truth table, there's no way we can draw one line through it, on a 2D-plane.
-If we use a multi-layer perceptron, we can solve this problem"""
+"""Notes for a Multi-Layer Perceptron (MLP): 
+- For an XOR, if we plot it's truth table, there's no way we can draw one line through it, on a 2D-plane.
+- If we use a multi-layer perceptron, we can solve this problem
+
+Moving on to "Training your Network, section 4/5:
+- This whole time, we've hard coded the weights of the neural network. What if we could show the network a lot of examples of say, how an XOR behaves (instead of hard-coding them), so that it can LEARN from those examples
+- An algorithm to train
+"""
 
 
 class MultiLayerPerceptron:
