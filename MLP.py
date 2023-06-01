@@ -103,8 +103,8 @@ print(f'1 1 = {neuron.run([1,1]):.10f}')
 
 # --------------- Test code to test MULTI-LAYER Perceptron as an XOR gate ----------------------- #
 
-mlp = MultiLayerPerceptron(layers = [2,2,1]) # choose 2 2 1 as since its 2 for NAND, 2 for OR, 1 for AND
-mlp.set_weights([[[-10,-10,-15], [15,15,-10]], [[10, 10, -15]]])
+mlp = MultiLayerPerceptron(layers = [2,2,1]) # choose 2 2 1- the first 2 means 2 inputs, second 2 is two perceptrons (one weighted for NAND, one weighted for NOR), and third 1 means one perceptron weighted as an AND
+mlp.set_weights([[[-10,-10,15], [15,15,-10]], [[10, 10, -15]]])
 #mlp.printWeights()
 print("MLP:")
 print(f'0 0 = {mlp.run([0,0])[0]:.10f}')
